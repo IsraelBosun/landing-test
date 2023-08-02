@@ -7,7 +7,7 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 
 const Nav = () => {
 
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const show = () => {
     setToggle(true)
@@ -19,9 +19,9 @@ const Nav = () => {
 
   return (
  <section className='bg-white '>
- <div className='flex px-[3rem]  justify-between cursor-pointer'>
+ <div className='flex px-[1rem] md:px-[3rem]  justify-between cursor-pointer'>
   <div className='flex gap-12 md:py-0 items-center'>
-    <div className='w-[150px]'><Image src={logo} alt="" className='w-full' /></div>
+    <div className='md:w-[150px]'><Image src={logo} alt="" className='w-full' /></div>
     <p className='text-yellow-400 md:flex hidden'>Home</p>
     <p className='md:flex hidden'>About</p>
     <p className='md:flex hidden'>Blog</p>

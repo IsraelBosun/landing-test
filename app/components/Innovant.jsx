@@ -26,7 +26,7 @@ const Approaching = ({text1, text2}) => {
 const Lines = ({num, dot}) => {
     return (
         <div className='flex items-center justify-center relative '>
-        <div className='bg-gray-300 p-8 w-9 h-9 flex items-center justify-center rounded-full'>
+        <div className='bg-blue-100 p-8 w-9 h-9 flex items-center justify-center rounded-full text-blue-400'>
           {num}
         </div>
         <div class="border border-dotted border-gray-500 w-32 h-0 text-transparent ">{dot}</div>
@@ -37,7 +37,7 @@ const Lines = ({num, dot}) => {
 const Small = ({num, text1, text2}) => {
     return (
         <div className='flex flex-col gap-1 items-center'>
-        <div className='bg-gray-300 p-8 w-9 h-9 flex items-center justify-center rounded-full'>
+        <div className='bg-blue-100 p-8 w-9 h-9 flex items-center justify-center rounded-full text-blue-400'>
           {num}
         </div>    
         <p className='font-bold'>{text1}</p>
