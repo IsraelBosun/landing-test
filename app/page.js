@@ -4,10 +4,12 @@ import { Approach, Footer, Hero, Innovators, Invest, Nav, Testimonials} from "./
 export default function Home() {
   return (
     <>
+
       <Hero />
       <Innovators />
       <Approach />
-      <Nav />
+      <Invest />
+      <Testimonials />
       <Footer />
     </>
   )

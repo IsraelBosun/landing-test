@@ -28,4 +28,7 @@
     border-width: 9px;
     border-image-source: linear-gradient(0.25turn, transparent 40%, #000 0);
   }
+  .testii {
+    display: none;
+}
 }

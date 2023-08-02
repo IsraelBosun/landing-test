@@ -1,20 +1,47 @@
 import React from 'react'
 import Image from 'next/image'
-import trade from "../../public/trade.jpg"
+import logo from "../../public/logo-img.png"
 
 const Nav = () => {
   return (
-    <section className='bg-gray-300 '>
-    <div className='section flex justify-center relative'>
-        <Image src={trade} alt="" className='w-2/3 rounded-xl h-auto' />
-    <div className='flex flex-col  gap-4 bg-white px-4 py-4 w-1/3 rounded-md absolute right-[20%] top-[30%] max-w-[300px] '>
-      <p className='text-xl font-bold'>Invest in the future <br /> of innovation</p>
-      <small className='max-w-[300px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quasi at nemo alias, <span className='hidden md:block'>laudantium voluptatum sunt distinctio, mollitia praesentium, tempora maxime doloremque ducimus laborum. Ipsa reprehenderit voluptas, voluptatibus</span> </small>
-    <button className='bg-blue-600 rounded-md px-2 py-3 text-white text-sm w-2/3'>Become a member</button>
-    </div>
-    </div>
-  </section>
+ <section className='bg-white '>
+ <div className='flex px-[3rem] py-1 justify-between'>
+  <div className='flex gap-12  items-center'>
+    <div className='w-[100px]'><Image src={logo} alt="" className='w-full' /></div>
+    <p className='text-yellow-500'>Home</p>
+    <p>About</p>
+    <p>Blog</p>
+    <p>Contact Us</p>
+  </div>
+
+  <div className ="flex items-center justify-between gap-6">
+    <button className='border rounded-lg px-4 py-2 border-blue-600 text-blue-600'>Becone a member</button>
+    <button className='border rounded-lg px-4 py-2 bg-blue-600 text-white'>Submit an idea</button>
+  </div>
+</div> 
+ </section> 
   )
 }
 
 export default Nav
+
+
+
+
+
+{/* <section className='bg-white '>
+{/* <div className='flex p-4 justify-between'>
+  <div className='flex gap-12  items-center'>
+    <div><Image src={logo} alt="" className='w-2/3' /></div>
+    <p>Home</p>
+    <p>About</p>
+    <p>Blog</p>
+    <p>Contact Us</p>
+  </div>
+
+  <div className ="flex items-center justify-between gap-6">
+    <button className='border rounded-lg px-4 py-2 border-blue-600 text-blue-600'>Becone a member</button>
+    <button className='border rounded-lg px-4 py-2 bg-blue-600 text-white'>Submit an idea</button>
+  </div>
+</div> */}
+// </section> */}

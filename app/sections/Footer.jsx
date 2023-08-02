@@ -1,16 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from "../../public/logo-img.png"
+import { BsWhatsapp, BsInstagram} from "react-icons/bs"
+import {FiTwitter} from "react-icons/fi"
+import {AiOutlineLinkedin} from "react-icons/ai"
+
 
 const Footer = () => {
   return (
     <section className='bg-blue-900 text-white text-xs sm:text-2xl'>
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 lg:justify-items-center  gap-2 xs:gap-6 lg:gap-0 section  '>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:justify-items-center  gap-6 xs:gap-6 lg:gap-0 section  '>
           <div className='flex flex-col   max-w-sm'>
               <div><Image src={logo} className='w-3/5' alt="" /></div>
               <p className='text-sm'>Encouraging innovation through <br /> collaboration and idea sharing</p>
-              <div>
-                icons
+              <div className='flex text-xl  gap-5 mt-4 text-blue-600'>
+                <BsWhatsapp />
+                <BsInstagram />
+                <FiTwitter />
+                <AiOutlineLinkedin />
               </div>
           </div>
           {/* xs:grid-cols-1 sm:grid-cols-2 */}
