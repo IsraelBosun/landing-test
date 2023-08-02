@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply w-full
+  }
+
+  .section {
+    @apply  mx-auto py-24 px-6 
+  }
+  .animate-slide:hover {
+    animation-play-state:paused
+  }
+}
+
+@layer utilities {
+  .font {
+    font-style: italic;
+    @apply text-blue-700;
+  }
+}
+
+@layer utilities {
+  .border-dotted-fewer {
+    border-style: dotted;
+    border-width: 9px;
+    border-image-source: linear-gradient(0.25turn, transparent 40%, #000 0);
+  }
+}
