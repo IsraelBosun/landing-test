@@ -17,7 +17,7 @@ const Testimonials = () => {
       <div className='grid md:grid-cols-12 gap-3 items-center justify-items-center'>
         <div className='col-span-6'><Image src={people} alt="" className='sm:min-w-[500px]' /></div>
         
-        <Swiper pagination={true} modules={[Pagination]} className='max-w-[300px] flex-1 testii col-span-6'>
+        <Swiper pagination={true} modules={[Pagination]} className='max-w-[300px] flex-1 testii col-span-6 cursor-pointer'>
           {testimonials.map((test) => (
             <SwiperSlide key={test.id}>
               <Testi {...test} />
